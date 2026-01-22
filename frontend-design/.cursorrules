@@ -1,0 +1,77 @@
+# Frontend Design Skill for Cursor
+
+This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic aesthetics.
+
+## When to Apply
+
+Apply this skill when:
+- Building UI components, pages, or complete interfaces
+- The user requests frontend development work
+- Creating visual designs that require aesthetic decisions
+
+## Design Thinking Process
+
+Before coding, commit to a BOLD aesthetic direction:
+
+### 1. Understand Context
+- **Purpose**: What problem does this interface solve? Who uses it?
+- **Tone**: Pick an aesthetic direction (brutally minimal, maximalist chaos, retro-futuristic, organic/natural, luxury/refined, playful/toy-like, editorial/magazine, brutalist/raw, art deco/geometric, soft/pastel, industrial/utilitarian)
+- **Constraints**: Technical requirements (framework, performance, accessibility)
+- **Differentiation**: What makes this UNFORGETTABLE?
+
+### 2. Implementation Standards
+
+Generate code that is:
+- Production-grade and functional
+- Visually striking and memorable
+- Cohesive with a clear aesthetic point-of-view
+- Meticulously refined in every detail
+
+## Frontend Aesthetics Guidelines
+
+### Typography
+- Choose beautiful, unique, interesting fonts
+- Avoid generic fonts: Arial, Inter, Roboto, system fonts
+- Use distinctive display fonts paired with refined body fonts
+
+### Color & Theme
+- Commit to cohesive aesthetics using CSS variables
+- Dominant colors with sharp accents
+- Avoid timid, evenly-distributed palettes
+
+### Motion & Animations
+- Use animations for effects and micro-interactions
+- Prioritize CSS-only solutions for HTML
+- Use Motion library for React when available
+- Create well-orchestrated page loads with staggered reveals
+- Use scroll-triggering and surprising hover states
+
+### Spatial Composition
+- Create unexpected layouts with asymmetry
+- Use overlap, diagonal flow, grid-breaking elements
+- Balance generous negative space OR controlled density
+
+### Backgrounds & Visual Details
+- Create atmosphere and depth (not solid colors)
+- Use gradient meshes, noise textures, geometric patterns
+- Add layered transparencies, dramatic shadows, decorative borders
+- Consider custom cursors and grain overlays
+
+## Anti-Patterns to Avoid
+
+NEVER use:
+- Overused fonts: Inter, Roboto, Arial, system fonts
+- Cliched color schemes: purple gradients on white backgrounds
+- Predictable layouts and component patterns
+- Cookie-cutter design lacking context-specific character
+- Common choices like Space Grotesk across projects
+
+## Key Principles
+
+- Choose clear conceptual direction and execute with precision
+- Match implementation complexity to aesthetic vision
+- Maximalist designs need elaborate code with extensive animations
+- Minimalist designs need restraint and careful attention to details
+- No two designs should be the same
+- Vary between light/dark themes, different fonts, different aesthetics
+- Think outside the box and commit fully to distinctive visions

@@ -14,4 +14,14 @@ The skills in this repository are designed to work with:
 - **Cursor** (AI-powered IDE)
 - **Codex** (OpenAI)
 - **GitHub Copilot**
+- **ChatGPT** (OpenAI)
 - Other LLM-based assistants
+
+## Platform Integration
+
+Each platform has its own configuration format. See the [Platform Guide](./PLATFORM_GUIDE.md) for detailed instructions on how to use skills with:
+- Claude (`.claude-plugin/plugin.json` or Project Knowledge)
+- Cursor (`.cursorrules` file)
+- Codex (`.codex/skills/<skill-name>/SKILL.md`)
+- GitHub Copilot (`.github/copilot-instructions.md`)
+- ChatGPT (Custom Instructions)
