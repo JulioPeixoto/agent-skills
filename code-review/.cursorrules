@@ -1,0 +1,111 @@
+# Code Review Skill for Cursor
+
+## When to Apply
+
+Apply this skill when:
+- Reviewing code changes or pull requests
+- User asks to review code, find bugs, or check compliance
+- Analyzing code quality before commit
+
+## Review Process
+
+### 1. Initial Check
+
+Before reviewing, verify:
+- Is this a meaningful change worth reviewing?
+- Are there project guidelines to check (CLAUDE.md, CONTRIBUTING.md)?
+- What is the intent of these changes?
+
+### 2. Multi-Angle Analysis
+
+Review from these perspectives:
+
+#### Guideline Compliance
+- Check adherence to CLAUDE.md and project guidelines
+- Verify naming conventions and code style
+- Ensure architectural patterns are followed
+- Only flag violations of documented rules
+
+#### Bug Detection
+- Syntax errors and type mismatches
+- Logic errors in conditionals and loops
+- Null/undefined handling issues
+- Resource leaks (memory, connections)
+- Missing error handling
+
+#### Code Quality
+- Security vulnerabilities
+- Performance concerns
+- API misuse
+- Edge case handling
+
+### 3. Confidence Scoring
+
+Rate each issue 0-100 for confidence:
+- 0-25: Low confidence, likely false positive
+- 26-50: Moderate, might be real
+- 51-75: High confidence, probably real
+- 76-100: Very high confidence, definitely real
+
+**Only report issues with confidence ≥ 80**
+
+### 4. High Signal Focus
+
+**DO flag:**
+- Syntax/type errors, missing imports
+- Clear logic errors producing wrong results
+- Unambiguous guideline violations
+- Security vulnerabilities
+- Resource leaks
+- Missing critical error handling
+
+**DO NOT flag:**
+- Style preferences (unless in guidelines)
+- Subjective suggestions
+- Nitpicks that don't matter
+- Issues linters catch
+- Pre-existing problems
+- Potential issues depending on unknown state
+
+### 5. Report Format
+
+For each issue:
+
+```
+### Issue: [Brief Title]
+Confidence: [85]/100
+Category: [Bug/Guideline/Security/Performance]
+
+Problem: [Clear explanation]
+Location: file.ext:L10-L15
+Evidence: [Quote problematic code]
+Guideline: [If applicable, quote rule]
+Fix: [Concrete solution]
+```
+
+### False Positive Prevention
+
+Never flag:
+- Pre-existing issues not in these changes
+- Code that looks wrong but is correct
+- Pedantic nitpicks
+- General quality unless required by guidelines
+- Issues with suppression comments
+
+### Best Practices
+
+1. Read project guidelines first
+2. Be specific with line numbers and files
+3. Explain why something is an issue
+4. Suggest concrete fixes
+5. Focus on critical issues
+6. Consider the change's intent
+7. Avoid nitpicking
+8. Verify before flagging
+
+## Integration with Cursor
+
+- Review on-demand: highlight code and ask for review
+- Review before commit: check staged changes
+- Review PR: analyze full pull request
+- Continuous: flag issues as you type
