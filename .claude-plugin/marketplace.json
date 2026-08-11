@@ -1,0 +1,21 @@
+{
+  "name": "juliopeixoto",
+  "owner": {
+    "name": "Julio Peixoto",
+    "url": "https://github.com/JulioPeixoto"
+  },
+  "description": "Julio Peixoto's agent skills, installable as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "agent-skills",
+      "source": "./",
+      "description": "A workshop for authoring agent skills — a template, validation scripts, and the create-skill skill that writes new ones.",
+      "category": "engineering",
+      "keywords": [
+        "skills",
+        "authoring",
+        "scaffolding"
+      ]
+    }
+  ]
+}

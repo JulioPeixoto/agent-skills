@@ -1,0 +1,19 @@
+{
+  "name": "agent-skills",
+  "version": "0.1.0",
+  "description": "A workshop for authoring agent skills — a template, validation scripts, and the create-skill skill that writes new ones.",
+  "author": {
+    "name": "Julio Peixoto",
+    "url": "https://github.com/JulioPeixoto"
+  },
+  "repository": "https://github.com/JulioPeixoto/agent-skills",
+  "keywords": [
+    "skills",
+    "authoring",
+    "agent-skills",
+    "scaffolding"
+  ],
+  "skills": [
+    "./skills/create-skill"
+  ]
+}
